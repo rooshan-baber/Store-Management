@@ -1,0 +1,11 @@
+  <form class="form" [formGroup]="loginform" (ngSubmit)="login()">
+  <h3>LOG IN</h3>
+    <input class="input" formControlName="email" name="email" autocomplete="off" type="text" placeholder="Email">
+    <input class="input" formControlName="password" name="password" type="password" placeholder="Password">
+    <button class="btn" >Log In</button>
+    <div class="social">
+      <div class="go"><i class="fab fa-google"></i>oogle</div>
+      <div class="fb"><i class="fab fa-facebook"></i>acebook</div>
+    </div>
+    <p class="formP" routerLink="/signup">Create new account</p>
+</form>

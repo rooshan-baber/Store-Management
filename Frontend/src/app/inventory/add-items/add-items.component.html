@@ -1,0 +1,37 @@
+<p class="heading">Add New Product</p>
+<form class="form" [formGroup]="productform" (ngSubmit)="product()">
+  <label>Product Code</label>
+  <input
+    class="input1"
+    formControlName="Pcode"
+    type="number"
+    placeholder="Enter Unique ID"
+  />
+
+  <label>Product Name</label>
+  <input
+    class="input1"
+    formControlName="Pname"
+    type="text"
+    placeholder="Enter Product Name"
+  />
+
+  <label>Product Price</label>
+  <input
+    class="input1"
+    formControlName="Pprice"
+    type="number"
+    placeholder="Enter Product Price"
+  />
+
+  <label>Product Category</label>
+  <select class="category-select" formControlName="Pcat">
+    <option value="" disabled selected>Choose Category</option>
+    <option *ngFor="let cat of allC" [value]="cat.Cname">
+      {{ cat.Cname }}
+    </option>
+  </select>
+  <div class="example-button-row">
+    <button mat-raised-button color="primary">Add Product</button>
+  </div>
+</form>

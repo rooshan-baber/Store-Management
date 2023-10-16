@@ -1,0 +1,19 @@
+.ru{
+    height: fit-content;
+    width: 400px;
+    background-image: linear-gradient(to top,rgb(184, 182, 182),rgb(223, 212, 212));
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 48%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(8, 7, 16, 0.8);
+    padding: 50px 35px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p{
+    padding: 15px 0px;
+}
+  

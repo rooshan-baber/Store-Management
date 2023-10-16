@@ -1,0 +1,23 @@
+.select {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.select option {
+    color: black;
+    background-color: #C7DBD2;
+    font-size: larger;
+}
+
+.quantity-input {
+    border: none;
+    background: transparent;   
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+
+
+}

@@ -1,0 +1,79 @@
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 10px; /* Adjust the gap between fields as needed */
+}
+
+.product-fields {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-select {
+  width: 150px;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 0px 10px;
+}
+
+.category-select option {
+  color: black;
+  background-color: #BFBBBB;
+  padding: 5px 0px;
+  font-size: larger;
+}
+
+.quantity-input {
+  border: 1px solid black;
+  background: transparent;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add-button, .generate-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.add-button:hover, .generate-button:hover {
+  background-color: #0056b3;
+}
+
+.add-button {
+  margin-right: 10px;
+}
+
+.generate-button {
+  background-color: #28a745;
+}
+
+.generate-button:hover {
+  background-color: #1d9237;
+}
+label{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+p{
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+}

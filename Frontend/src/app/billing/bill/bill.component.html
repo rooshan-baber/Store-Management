@@ -1,0 +1,25 @@
+<p class="heading">Bill</p>
+<div class="container">
+  <table class="table table-success table-striped table-bordered">
+    <thead class="table-bordered">
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Category</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-bordered" *ngFor="let data of billData">
+        <td>{{data.product}}</td>
+        <td>{{data.quantity}}</td>
+        <td>{{data.productCategory}}</td>
+        <td>{{data.totalPrice}}</td>
+      </tr>
+      <tr class="table-bordered">
+        <th colspan="3">Total Bill</th>
+        <th>{{totalPriceSum}}</th>
+      </tr>
+    </tbody>
+  </table>
+</div>

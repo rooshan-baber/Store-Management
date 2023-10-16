@@ -1,0 +1,20 @@
+<p class="heading">Add New Category</p>
+<form class="form" [formGroup]="categoryform" (ngSubmit)="category()">
+  <label>Category Code</label>
+  <input
+    class="input1"
+    formControlName="Ccode"
+    type="number"
+    placeholder="Enter Unique ID"
+  />
+  <label>Category Name</label>
+  <input
+    class="input1"
+    formControlName="Cname"
+    type="text"
+    placeholder="Enter Category Name"
+  />
+  <div class="example-button-row mt-3">
+    <button mat-raised-button color="primary">Add Category</button>
+  </div>
+</form>

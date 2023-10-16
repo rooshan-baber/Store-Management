@@ -1,0 +1,13 @@
+<!-- SIGNUP FORM -->
+<form class="form" #signupform="ngForm" (ngSubmit)="getdata(signupform.value)">
+  <h3>SIGN UP</h3>
+    <input class="input" autocomplete="off" ngModel name="username" type="text" placeholder="Username" id="username" required>
+    <input class="input" autocomplete="off" ngModel name="email" type="text" placeholder="Email" id="email" required>
+    <input class="input" ngModel name="password" type="password" placeholder="Password" id="password" required>
+    <button class="btn">Sign Up</button>
+    <div class="social">
+      <div class="go"><i class="fab fa-google"></i>oogle</div>
+      <div class="fb"><i class="fab fa-facebook"></i>acebook</div>
+    </div> 
+    <p class="formP" routerLink="/login">Already have an Account</p>
+  </form>

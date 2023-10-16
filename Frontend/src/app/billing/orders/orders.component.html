@@ -1,0 +1,31 @@
+<form [formGroup]="orderForm">
+  <div formArrayName="productForms">
+    <div *ngFor="let productForm of productForms.controls; let i = index" class="product-row">
+      <div [formGroupName]="i" class="product-fields">
+        <div class="form-field">
+          <label for="product">Product</label>
+          <select class="category-select" formControlName="product" (change)="productSelected(i)">
+            <option *ngFor="let pro of products" [value]="pro.Pname">{{ pro.Pname }}</option>
+          </select>
+        </div>
+        <div class="form-field mx-5">
+          <label for="category">Category</label>
+          <p>{{ productForm.get('productCategory')?.value }}</p>
+        </div>
+        <div class="form-field mx-5">
+          <label for="quantity">Quantity</label>
+          <input type="number" formControlName="quantity" (input)="calculateTotalPrice(i)" min="1">
+        </div>
+        <div class="form-field mx-5">
+          <label for="totalPrice">Total Price</label>
+          <p>{{ productForm.get('totalPrice')?.value }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="button-container">
+  <button (click)="addNewProductForm()" class="add-button m-2">Add Product</button>
+    <button (click)="generateBill()" class="generate-button m-2">Generate Bill</button>
+</div>
+

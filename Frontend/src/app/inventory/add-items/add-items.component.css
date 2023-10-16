@@ -1,0 +1,32 @@
+form{
+    text-align: center;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+button {
+    width: 60%;
+    font-weight: 500;
+    font-size: larger;
+    margin-top: 30px;
+}
+.category-select {
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 2px solid #e0e0e4;
+  }
+
+.category-select:hover {
+    border-bottom-color: rgb(71, 68, 68);
+}
+  
+  .category-select option {
+    color: black;
+    background-color: #BFBBBB;
+    padding: 5px 0px;
+    font-size: larger;
+  }
+  
