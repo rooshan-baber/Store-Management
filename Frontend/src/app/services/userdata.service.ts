@@ -41,7 +41,8 @@ getToken(): string | null {
 }
 
 clearToken() {
-  localStorage.removeItem(this.authToken);
+  debugger
+  localStorage.removeItem("Token");
 }
 
 islogin(): boolean {

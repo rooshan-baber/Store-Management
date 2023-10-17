@@ -26,3 +26,15 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .add-button{
+    background-color: #e90f3e;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .add-button:hover{
+    background-color: #b1162b;
+  }

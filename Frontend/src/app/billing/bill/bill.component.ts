@@ -19,4 +19,8 @@ export class BillComponent implements OnInit {
   }
   billData = this.userData.getBillData();
   totalPriceSum = this.billData.reduce((sum: any, data: { totalPrice: any; }) => sum + data.totalPrice, 0);
+
+  printPage() {
+    window.print();
+  }
 }
